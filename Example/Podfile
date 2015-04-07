@@ -1,8 +1,0 @@
-source 'https://github.com/CocoaPods/Specs.git'
-
-
-target 'InfantIQAppsKit', :exclusive => true do
-  pod "InfantIQAppsKit", :path => "../"
-
-  
-end

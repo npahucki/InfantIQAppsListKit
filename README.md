@@ -1,6 +1,5 @@
 # InfantIQAppsKit
 
-[![CI Status](http://img.shields.io/travis/Nathan Pahucki/InfantIQAppsKit.svg?style=flat)](https://travis-ci.org/Nathan Pahucki/InfantIQAppsKit)
 [![Version](https://img.shields.io/cocoapods/v/InfantIQAppsKit.svg?style=flat)](http://cocoapods.org/pods/InfantIQAppsKit)
 [![License](https://img.shields.io/cocoapods/l/InfantIQAppsKit.svg?style=flat)](http://cocoapods.org/pods/InfantIQAppsKit)
 [![Platform](https://img.shields.io/cocoapods/p/InfantIQAppsKit.svg?style=flat)](http://cocoapods.org/pods/InfantIQAppsKit)
@@ -26,4 +25,4 @@ Nathan Pahucki, npahucki@gmail.com
 
 ## License
 
-InfantIQAppsKit is available under the MIT license. See the LICENSE file for more info.
+InfantIQAppsKit is copyrighted.
