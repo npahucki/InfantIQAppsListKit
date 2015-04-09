@@ -1,0 +1,20 @@
+[
+  {
+    "appStoreUrl": "https://itunes.apple.com/us/app/dataparenting-baby-milestones/id905124835?ls=1&mt=8",
+    "bundleId": "com.dataparenting.DataParenting",
+    "description": "Track and remember all your baby's first times",
+    "finePrint": "Includes customized tips and game ideas",
+    "iconUrl": "",
+    "title": "DataParenting",
+    "color" : 1740447
+  },
+  {
+    "appStoreUrl": "https://itunes.apple.com/us/app/infant-iq-early-reader-teach/id946204982?ls=1&mt=8",
+    "bundleId": "com.infantiq.EarlyReader",
+    "description": "Use the proven Doman method to teach your young baby how to read!",
+    "finePrint": "For babies 6 months to 4 years old",
+    "iconUrl": "",
+    "title": "Early Reader",
+    "color" : 15729754
+  }
+]

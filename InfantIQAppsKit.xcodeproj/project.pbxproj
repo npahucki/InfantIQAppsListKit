@@ -8,6 +8,8 @@
 
 /* Begin PBXFileReference section */
 		72F181C9D4873B2FE6083E7C /* IQApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IQApplication.swift; path = Pod/Classes/IQApplication.swift; sourceTree = "<group>"; };
+		72F18489EAC3CD000E518B4A /* IQApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IQApplication.m; path = Pod/Classes/IQApplication.m; sourceTree = "<group>"; };
+		72F18505BB3FFCE5FE0348BA /* IQApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IQApplication.h; path = Pod/Classes/IQApplication.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -23,6 +25,8 @@
 			children = (
 				72F18B5D54007080E0C25AB2 /* Products */,
 				72F181C9D4873B2FE6083E7C /* IQApplication.swift */,
+				72F18489EAC3CD000E518B4A /* IQApplication.m */,
+				72F18505BB3FFCE5FE0348BA /* IQApplication.h */,
 			);
 			sourceTree = "<group>";
 		};

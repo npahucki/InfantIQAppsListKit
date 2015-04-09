@@ -10,29 +10,21 @@
 Pod::Spec.new do |s|
   s.name             = "InfantIQAppsKit"
   s.version          = "0.1.0"
-  s.summary          = "A short description of InfantIQAppsKit."
-  s.description      = <<-DESC
-                       An optional longer description of InfantIQAppsKit
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/InfantIQAppsKit"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
+  s.summary          = "Kit for showing other InfantIQAppsKit."
+  s.homepage         = "https://github.com/npahucki/InfantIQAppsKit"
+  s.license          = 'Copyright'
   s.author           = { "Nathan Pahucki" => "npahucki@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/InfantIQAppsKit.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/npahucki/InfantIQAppsKit.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'InfantIQAppsKit' => ['Pod/Assets/*.png']
+    'InfantIQAppsKit' => ['Pod/Assets/*']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
