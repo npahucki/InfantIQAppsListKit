@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13e0d958-76bb-4d8a-bed0-e34232ef5b7d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pod/Assets/com.dataparenting.DataParenting.png" afterPath="$PROJECT_DIR$/Pod/Assets/com.dataparenting.DataParenting.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pod/Classes/IQApplication.h" afterPath="$PROJECT_DIR$/Pod/Classes/IQApplication.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pod/Classes/IQApplication.m" afterPath="$PROJECT_DIR$/Pod/Classes/IQApplication.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pod/Classes/IQApplicationListController.h" afterPath="$PROJECT_DIR$/Pod/Classes/IQApplicationListController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pod/Classes/IQApplicationListController.m" afterPath="$PROJECT_DIR$/Pod/Classes/IQApplicationListController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pod/Classes/IQApplicationTableCellView.h" afterPath="$PROJECT_DIR$/Pod/Classes/IQApplicationTableCellView.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pod/Classes/IQApplicationTableCellView.m" afterPath="$PROJECT_DIR$/Pod/Classes/IQApplicationTableCellView.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pod/Assets/InfantIQAppsList.json" afterPath="$PROJECT_DIR$/Pod/Assets/InfantIQAppsList.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="13e0d958-76bb-4d8a-bed0-e34232ef5b7d" name="Default" comment="" />
     <ignored path="InfantIQAppsKit.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
