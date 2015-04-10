@@ -43,5 +43,14 @@
     }];
 }
 
+-(CGFloat) estimatedHeightForWidth:(CGFloat) tableWidth {
+    NSAssert(self.application != nil,@"Expected non nil application");
+    CGFloat height = [self.textLabel sizeThatFits:CGSizeMake(tableWidth,512)].height;
+    height+= 8.0; // space
+    height += [self.detailTextLabel sizeThatFits:CGSizeMake(tableWidth,512)].height;
+    height +=8; // top + bottom border.
+    return height;
+}
+
 
 @end

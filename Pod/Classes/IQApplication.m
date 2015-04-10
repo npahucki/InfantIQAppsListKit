@@ -22,7 +22,7 @@
             app.appBundleId = obj[@"bundleId"];
             app.longDescription = obj[@"description"];
             app.finePrint = obj[@"finePrint"];
-            app.appStoreUrl = obj[@"appStoreUrl"];
+            app.appStoreId = obj[@"appStoreId"];
             app.mainColor = UIColorFromRGB(((NSNumber *)obj[@"color"]).intValue);
             [applications addObject:app];
         }
@@ -74,7 +74,6 @@
         NSLog(@"Cache period of one day still not exceeded for resource %@", url);
         return;
     }
-
     // Ok, we already either called the block with the results of the cache or default
     // We will call again now if we can load the data from the URL specified.
     // We will also update the cache.
@@ -84,7 +83,7 @@
     if(cacheFileCreatedDate) [request setValue:[rfc2822Formatter stringFromDate:cacheFileCreatedDate] forHTTPHeaderField:@"If-Modified-Since"];
     NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *remoteData, NSURLResponse *response, NSError *remoteError) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            // In the case of 304 (Not Modified), then neither data nor error will be set
+            // In the case of non 200, then neither data nor error will be set
             if(((NSHTTPURLResponse *)response).statusCode == 200) {
                 block(remoteData, remoteError);
                 [remoteData writeToFile:cacheFilePath atomically:NO];
@@ -99,6 +98,25 @@
     
     [task resume];
 }
+
++ (void)allOtherApplications:(IQApplicationListResultBlock)block {
+    [self allApplications:^(NSArray *applications, NSError *error) {
+        if(applications.count) {
+            NSUInteger idxToRemove = 0;
+            for(IQApplication * app in applications) {
+                if([app.appBundleId isEqualToString:[[NSBundle mainBundle] bundleIdentifier]]) {
+                    break;
+                }
+                idxToRemove++;
+            }
+            if(idxToRemove < applications.count) {
+                [((NSMutableArray *) applications) removeObjectAtIndex:idxToRemove];
+            }
+        }
+        block(applications,error);
+    }];
+}
+
 
 + (void)allApplications:(IQApplicationListResultBlock)block {
     [self loadResource:@"InfantIQAppsList" ofType:@"json" withBlock:^(NSData *data, NSError *error) {

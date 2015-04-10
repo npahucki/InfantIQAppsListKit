@@ -20,12 +20,14 @@ typedef void (^IQApplicationDataResultBlock)(NSData * image, NSError *error);
 @property NSString * appBundleId;
 @property NSString * title;
 @property UIColor * mainColor;
-@property NSString * appStoreUrl;
+@property NSString * appStoreId;
 @property NSString * longDescription;
 @property NSString * finePrint;
 
 
 -(void) fetchImage:(IQApplicationImageResultBlock)block;
+
++ (void)allOtherApplications:(IQApplicationListResultBlock)block;
 
 +(void) allApplications:(IQApplicationListResultBlock)block;
 

@@ -12,4 +12,5 @@
 @property NSString * fontName;
 
 
+- (CGFloat)estimatedHeightForWidth:(CGFloat)tableWidth;
 @end

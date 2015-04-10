@@ -7,6 +7,6 @@
 
 @interface IQApplicationListController : UITableViewController
 
-
+@property CGFloat fadeBottomStart;
 
 @end

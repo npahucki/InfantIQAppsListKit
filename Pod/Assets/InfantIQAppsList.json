@@ -1,20 +1,36 @@
 [
   {
-    "appStoreUrl": "https://itunes.apple.com/us/app/dataparenting-baby-milestones/id905124835?ls=1&mt=8",
+    "appStoreId": "905124835",
     "bundleId": "com.dataparenting.DataParenting",
     "description": "Track and remember all your baby's first times",
     "finePrint": "Includes customized tips and game ideas",
-    "iconUrl": "",
     "title": "DataParenting",
     "color" : 1740447
   },
   {
-    "appStoreUrl": "https://itunes.apple.com/us/app/infant-iq-early-reader-teach/id946204982?ls=1&mt=8",
+    "appStoreId": "946204982",
     "bundleId": "com.infantiq.EarlyReader",
     "description": "Use the proven Doman method to teach your young baby how to read!",
     "finePrint": "For babies 6 months to 4 years old",
-    "iconUrl": "",
     "title": "Early Reader",
     "color" : 15729754
+  },
+  {
+    "appStoreId": "980367889",
+    "bundleId": "com.infantiq.EssentialTips",
+    "description": "Get tips to help make your little one smarter!",
+    "finePrint": "For babies 0 to 4 years old",
+    "title": "Genuis Tips",
+    "color" : 1740447
+  },
+  {
+    "appStoreId": "983017612",
+    "bundleId": "com.infantiq.Bubli",
+    "description": "Stimulate your young baby with touch, sounds and colors!",
+    "finePrint": "For babies 3 to 12 months old",
+    "title": "Bubli",
+    "color" : 9163492
   }
+
+
 ]

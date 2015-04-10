@@ -19,8 +19,21 @@
     [self loadObjects];
 }
 
+-(void) viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    // Make the bottom of the Text field fade out
+    if(self.fadeBottomStart > 0) {
+        CAGradientLayer *l = [CAGradientLayer layer];
+        l.frame = self.tableView.bounds;
+        l.colors = @[(id) [UIColor whiteColor].CGColor, (id) [UIColor clearColor].CGColor];
+        l.startPoint = CGPointMake(0.0f, self.fadeBottomStart);
+        l.endPoint = CGPointMake(0.0f, 1.0f);
+        self.tableView.layer.mask = l;
+    }
+}
+
 -(void) loadObjects {
-    [IQApplication allApplications:^(NSArray *applications, NSError *error) {
+    [IQApplication allOtherApplications:^(NSArray *applications, NSError *error) {
         _applications = applications;
         [self.tableView reloadData];
         if(error) NSLog(@"Failed to InfantIQ Applications Table View due to error:%@", error);
@@ -33,14 +46,48 @@
 
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    IQApplicationTableCellView *cell = [self dequeOrCreateCell];
+    cell.application = _applications[(NSUInteger) indexPath.row];
+    return cell;
+}
+
+-(IQApplicationTableCellView *) dequeOrCreateCell {
     static NSString *CellIdentifier = @"infantIQAppCell";
-    IQApplicationTableCellView *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    IQApplicationTableCellView *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[IQApplicationTableCellView alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    cell.application = _applications[(NSUInteger) indexPath.row];
-
+    cell.backgroundColor = [UIColor clearColor]; // This can not be set in IB...it seems to have no effect at all. 
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    IQApplicationTableCellView * cell = (IQApplicationTableCellView *) [self.tableView cellForRowAtIndexPath:indexPath];
+    NSString * url = [@"itms://itunes.apple.com/app/id" stringByAppendingString:cell.application.appStoreId];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
+
+-(UIView*) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    UILabel * label = [[UILabel alloc] init];
+    label.textColor = [UIColor lightTextColor];
+    label.backgroundColor = [UIColor clearColor];
+    label.font = [UIFont systemFontOfSize:18];
+    label.text = @"Our Other Apps";
+    CGSize labelSize =[label sizeThatFits:CGSizeMake(tableView.bounds.size.width, self.tableView.rowHeight / 2)];
+
+    UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0,0,labelSize.width, labelSize.height)];
+    view.backgroundColor = [UIColor lightGrayColor];
+    label.frame = CGRectMake(15,0,labelSize.width, labelSize.height); // 15 to match built in table cell indent
+    [view addSubview:label];
+    return view;
+}
+
+-(UIView*) tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return [[UIView alloc] initWithFrame:CGRectZero];
+}
+
+
 
 @end
