@@ -63,9 +63,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     IQApplicationTableCellView * cell = (IQApplicationTableCellView *) [self.tableView cellForRowAtIndexPath:indexPath];
-    NSString * url = [@"itms://itunes.apple.com/app/id" stringByAppendingString:cell.application.appStoreId];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
-    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+    BOOL shouldOpen = YES;
+    if([self.delegate respondsToSelector:@selector(shouldOpenApp:)]) {
+        shouldOpen = [self.delegate shouldOpenApp:cell.application];
+    }
+
+    if(shouldOpen) {
+        NSString * url = [@"itms://itunes.apple.com/app/id" stringByAppendingString:cell.application.appStoreId];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+        [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+    }
 }
 
 -(UIView*) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {

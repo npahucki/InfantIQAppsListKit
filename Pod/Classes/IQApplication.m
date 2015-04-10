@@ -17,14 +17,16 @@
     if([topObject isKindOfClass:[NSArray class]]) {
         applications = [[NSMutableArray alloc] init];
         for(NSDictionary * obj in topObject) {
-            IQApplication * app = [[IQApplication alloc] init];
-            app.title = obj[@"title"];
-            app.appBundleId = obj[@"bundleId"];
-            app.longDescription = obj[@"description"];
-            app.finePrint = obj[@"finePrint"];
-            app.appStoreId = obj[@"appStoreId"];
-            app.mainColor = UIColorFromRGB(((NSNumber *)obj[@"color"]).intValue);
-            [applications addObject:app];
+            if(!obj[@"hidden"]) {
+                IQApplication * app = [[IQApplication alloc] init];
+                app.title = obj[@"title"];
+                app.appBundleId = obj[@"bundleId"];
+                app.longDescription = obj[@"description"];
+                app.finePrint = obj[@"finePrint"];
+                app.appStoreId = obj[@"appStoreId"];
+                app.mainColor = UIColorFromRGB(((NSNumber *)obj[@"color"]).intValue);
+                [applications addObject:app];
+            }
         }
     }
     return applications;
