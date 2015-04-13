@@ -8,8 +8,12 @@
 
 /* Begin PBXFileReference section */
 		72F181C9D4873B2FE6083E7C /* IQApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IQApplication.swift; path = Pod/Classes/IQApplication.swift; sourceTree = "<group>"; };
+		72F182C908239B6C52EF86A9 /* IQApplicationTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IQApplicationTableCellView.m; path = Pod/Classes/IQApplicationTableCellView.m; sourceTree = "<group>"; };
+		72F184446723B5E9AB0DBFF5 /* IQApplicationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IQApplicationListController.m; path = Pod/Classes/IQApplicationListController.m; sourceTree = "<group>"; };
 		72F18489EAC3CD000E518B4A /* IQApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IQApplication.m; path = Pod/Classes/IQApplication.m; sourceTree = "<group>"; };
 		72F18505BB3FFCE5FE0348BA /* IQApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IQApplication.h; path = Pod/Classes/IQApplication.h; sourceTree = "<group>"; };
+		72F18AC1DF595B46F8435E99 /* IQApplicationTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IQApplicationTableCellView.h; path = Pod/Classes/IQApplicationTableCellView.h; sourceTree = "<group>"; };
+		72F18B0BDC85C30DD69FEA8D /* IQApplicationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IQApplicationListController.h; path = Pod/Classes/IQApplicationListController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -27,6 +31,10 @@
 				72F181C9D4873B2FE6083E7C /* IQApplication.swift */,
 				72F18489EAC3CD000E518B4A /* IQApplication.m */,
 				72F18505BB3FFCE5FE0348BA /* IQApplication.h */,
+				72F18B0BDC85C30DD69FEA8D /* IQApplicationListController.h */,
+				72F184446723B5E9AB0DBFF5 /* IQApplicationListController.m */,
+				72F18AC1DF595B46F8435E99 /* IQApplicationTableCellView.h */,
+				72F182C908239B6C52EF86A9 /* IQApplicationTableCellView.m */,
 			);
 			sourceTree = "<group>";
 		};
