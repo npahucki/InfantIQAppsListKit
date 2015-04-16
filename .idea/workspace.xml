@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e0d958-76bb-4d8a-bed0-e34232ef5b7d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InfantIQAppsKit.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/InfantIQAppsKit.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="InfantIQAppsKit.iws" />
@@ -50,7 +49,7 @@
       <file leaf-file-name="IQApplication.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Pod/Classes/IQApplication.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.062413316" vertical-offset="0" max-vertical-offset="721">
+            <state vertical-scroll-proportion="0.062586926" vertical-offset="0" max-vertical-offset="719">
               <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
               <folding />
             </state>
@@ -213,13 +212,20 @@
       <option name="project" value="LOCAL" />
       <updated>1428592358206</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add files to project.">
+      <created>1428934952450</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1428934952450</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1381" height="865" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -235,7 +241,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -258,7 +263,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Initial working version." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial working version." />
+    <MESSAGE value="Add files to project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add files to project." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -336,7 +342,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Pod/Classes/IQApplication.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.062413316" vertical-offset="0" max-vertical-offset="721">
+        <state vertical-scroll-proportion="0.062586926" vertical-offset="0" max-vertical-offset="719">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
           <folding />
         </state>
