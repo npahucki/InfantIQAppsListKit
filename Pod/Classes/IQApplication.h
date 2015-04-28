@@ -27,6 +27,8 @@ typedef void (^IQApplicationDataResultBlock)(NSData * image, NSError *error);
 
 -(void) fetchImage:(IQApplicationImageResultBlock)block;
 
+-(void) openInAppStore;
+
 + (void)allOtherApplications:(IQApplicationListResultBlock)block;
 
 +(void) allApplications:(IQApplicationListResultBlock)block;

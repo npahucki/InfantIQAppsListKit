@@ -69,10 +69,9 @@
     }
 
     if(shouldOpen) {
-        NSString * url = [@"itms://itunes.apple.com/app/id" stringByAppendingString:cell.application.appStoreId];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
-        [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+        [cell.application openInAppStore];
     }
+    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 -(UIView*) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {

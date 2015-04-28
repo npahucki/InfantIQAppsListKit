@@ -40,6 +40,11 @@
     }];
 }
 
+-(void) openInAppStore {
+    NSString * url = [@"itms://itunes.apple.com/app/id" stringByAppendingString:self.appStoreId];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+}
+
 // This method will call the block one or times.
 // Once if there is a cached result OR default available,
 // and once more if there is an UPDATED version of the resource available.
